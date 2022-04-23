@@ -1,0 +1,12 @@
+'''
+> En
+Write the output of the code below.
+
+> Kr
+아래 코드의 출력값을 적으시오.
+'''
+
+
+String = "We are Jeon-ju University peoples!"
+
+print(String[1:5])

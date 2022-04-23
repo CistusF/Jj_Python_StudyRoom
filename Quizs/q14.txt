@@ -1,0 +1,19 @@
+'''
+> En
+Ez quiz.
+Choose the data type of x below.
+
+> Kr 
+쉬어가는 문제.
+아래 x의 자료형을 고르시오.
+
+
+> Answer
+1. Str
+2. Int
+3. Float
+4. List
+5. None
+'''
+
+x = 4

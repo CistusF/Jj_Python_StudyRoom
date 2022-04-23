@@ -1,0 +1,29 @@
+'''
+> En
+The code below is a code that outputs a multiple of 2.
+When you want to print multiples of 2 from 1 to 100
+Choose the values ​​for Max and count.
+
+> Kr
+아래의 코드는 2의 배수를 출력하는 코드이다.
+1~100까지의 2의 배수를 출력하고 싶을 때
+Max와 count의 값을 고르시오.
+
+
+> Answer 
+1. 0 100
+2. 1 100
+3. 0 101
+4. 1 101
+5. 101 1
+6. Error
+'''
+
+
+Max = 0
+count = 0
+
+while count < Max:
+    if count % 2 == 0:
+        print(count) 
+    count += 1

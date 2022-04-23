@@ -1,0 +1,31 @@
+'''
+> En
+The code below is a code that takes integers in x and y, divides them, stores them in z, and outputs them.
+
+At this time.
+What is the data type of z and the appropriate string format code to use below.
+
+> Kr
+아래의 코드는 x와 y에 정수를 받아와 나눈 후
+이를 z에 저장하여 출력하는 코드이다.
+
+이 때.
+z의 자료형과 아래에 사용할 알맞은 문자열 포맷 코드는 무엇인가.
+
+
+> Answer
+1. int %d
+2. int %f
+3. int %s
+4. float %d
+5. float %f
+6. Error
+'''
+
+
+x = int(input("Please enter the first integer. : "))
+y = int(input("Please enter the second integer. : "))
+
+z = x / y
+
+print("Result : %?" % (z))

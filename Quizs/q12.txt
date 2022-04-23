@@ -1,0 +1,26 @@
+'''
+> En
+Choose the output value of the code below.
+
+> Kr
+아래 코드의 출력값을 고르시오.
+
+
+> Answer 
+1. 2
+2. 2.5
+3. 5.0
+4. 10
+5. 8.5
+6. Error
+7. No Answer
+'''
+
+
+x = 10
+
+x += 5
+x = x // 2
+x = 5 / 2
+
+print(x)

@@ -1,0 +1,21 @@
+'''
+> En
+The code below takes two integers and subtracts the second integer from the first.
+If you put 8 in x and 5 in y, choose the result of this code.
+
+> Kr
+아래 코드는 두개의 정수를 받아와 첫 정수에서 두번째 정수를 빼는 코드이다.
+만약 x에 8을 넣고 y에 5를 넣었을 경우 이 코드의 결과값을 고르시오.
+
+
+> Answer
+1. 3
+2. -3
+3. 3.0
+4. -3.0
+5. Error
+'''
+x = input("Please enter the first integer. : ")
+y = input("Please enter the second integer. : ")
+
+print(x - y)
