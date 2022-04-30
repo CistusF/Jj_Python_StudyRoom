@@ -1,0 +1,19 @@
+{
+  "name": "jj_auto_announce_discord_bot",
+  "version": "0.1.0",
+  "description": "a bot source for an automatically announcement to students get quiz list.  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "Discord_Bot",
+    "Jeon-Ju_University"
+  ],
+  "author": "CistusF",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "node-cron": "^3.0.0"
+  }
+}

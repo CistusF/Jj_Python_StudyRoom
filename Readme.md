@@ -15,4 +15,10 @@
   
   
 # Status  
-### In progress...
+### In progress...  
+  
+  
+# AutoAnnounceDiscordBot?  
+  
+### AutoAnnounceDiscordBot is a bot source for an automatically announcement to students get quiz list.  
+### AutoAnnounceDiscordBot은 학생들이 자동으로 퀴즈리스트를 받을 수 있도록 만들기 위한 봇의 소스입니다.  
