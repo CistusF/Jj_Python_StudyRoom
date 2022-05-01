@@ -1,0 +1,15 @@
+> 문제 6번
+다음 c의 자료형을 고르시오. 
+
+> 코드
+c = '3.0' 
+
+> 번호
+1. int
+2. None
+3. float
+4. tuple
+5. list
+6. object
+7. str
+8. number

@@ -1,0 +1,16 @@
+> 문제 12번
+여러분이 가장 싫어할 문제로 찾아왔습니다.
+아래 코드의 출력값을 고르시오. 
+
+> 코드
+String = "Hello, i'm nightmare" 
+
+print(String[1, - 19]) 
+
+> 번호
+1.
+2. H
+3. e
+4. ,
+5. eramthgin m'i , olle
+

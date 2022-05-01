@@ -1,0 +1,20 @@
+> 문제 4번
+이 코드는 학점을 구하기 위해 작성된 코드이다.
+다음중 아래 코드의 빈칸(1️⃣2️⃣3️⃣)에 들어갈 알맞은 코드와 이 코드의 결과값을 고르시오. 
+
+> 코드
+math = 80
+eng = 75
+total = math + eng; avg = total / 2
+1️⃣ avg > 90: grade = "A"
+2️⃣ avg > 80: grade = "B"
+2️⃣ avg > 70: grade = "C"
+2️⃣ avg > 60: grade = "D"
+3️⃣: grade = "F" 
+
+> 번호
+1. if else elif C
+2. if elif elif D
+3. if elif else C
+4. if else if C
+5. if if else C

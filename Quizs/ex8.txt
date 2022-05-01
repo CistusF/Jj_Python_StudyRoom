@@ -1,0 +1,19 @@
+> 문제 8번
+이 코드는 비밀번호를 입력받아 이를 이용하여 비밀번호가 맞는지 틀린지를 확인하는 코드입니다.
+만약 비밀번호로 Hi, Python! 을 입력받았을 경우 결과값을 고르시오. 
+
+> 코드
+ment = "" 
+
+pw = input("password? : )
+if not ment: ment = "A"
+if pw == "Hi": ment = "B"
+elif pw == "Hi, Python!": ment = "C" 
+
+print(ment) 
+
+> 번호
+1. "A"
+2. "B"
+3. "C"
+4. ""
