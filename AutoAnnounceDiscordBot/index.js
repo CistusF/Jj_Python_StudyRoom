@@ -4,15 +4,35 @@ const cron = require("node-cron");
 let guild, failed = [];
 
 const client = new Client({
-    intents: Object.values(Intents.FLAGS)
+    intents: Object.values(Intents.FLAGS),
+    partials: ["CHANNEL", "GUILD_MEMBER", "GUILD_SCHEDULED_EVENT", "MESSAGE", "REACTION", "USER"]
 });
 
 client.once('ready', () => {
+    console.log("Bot is now ready!");
     guild = client.guilds.cache.get(guildId);
 
     if (!cron.validate(time)) {
         throw new Error("Invalid time\nplease change time");
     }
+
+    cron.schedule("55 20 * * *", () => {
+        console.log("Triggered")
+        students.forEach(i => {
+            member = guild.members.cache.get(i);
+            if (!member) {
+                failed.push(i);
+            } else {
+                let embed = new MessageEmbed({
+                    title: "시험 안내",
+                    description: "시험까지 5분 남아 안내 드립니다!\n이제 준비 해주시길 바랍니다.",
+                    color: "BLURPLE",
+                });
+                member.send({ embeds: [embed] });
+            };
+        });
+    })
+
     cron.schedule(time, () => {
         students.forEach(i => {
             member = guild.members.cache.get(i);
@@ -38,6 +58,20 @@ client.once('ready', () => {
 
         process.exit(1);
     });
+});
+
+client.on("message", (message) => {
+    if (message.channel.type != "DM" || message.author.bot) return;
+    let embed = new MessageEmbed({
+        author: {
+            name: message.author.tag,
+            iconURL: message.author.displayAvatarURL()
+        },
+        description: message.content
+    });
+
+    console.log(message.attachments);
+    client.channels.cache.get("898007999463968778").send({ embeds: [embed] });
 });
 
 
