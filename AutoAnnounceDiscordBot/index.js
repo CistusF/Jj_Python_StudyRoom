@@ -12,28 +12,7 @@ client.once('ready', () => {
     console.log("Bot is now ready!");
     guild = client.guilds.cache.get(guildId);
 
-    if (!cron.validate(time)) {
-        throw new Error("Invalid time\nplease change time");
-    }
-
-    cron.schedule("55 20 * * *", () => {
-        console.log("Triggered")
-        students.forEach(i => {
-            member = guild.members.cache.get(i);
-            if (!member) {
-                failed.push(i);
-            } else {
-                let embed = new MessageEmbed({
-                    title: "시험 안내",
-                    description: "시험까지 5분 남아 안내 드립니다!\n이제 준비 해주시길 바랍니다.",
-                    color: "BLURPLE",
-                });
-                member.send({ embeds: [embed] });
-            };
-        });
-    })
-
-    cron.schedule(time, () => {
+    cron.schedule("00 20 * * *", () => {
         students.forEach(i => {
             member = guild.members.cache.get(i);
             if (!member) {
@@ -41,7 +20,7 @@ client.once('ready', () => {
             } else {
                 let embed = new MessageEmbed({
                     title: "시험 시작 안내",
-                    description: "[https://github.com/vendettadelsangue/Jj_Python_StudyRoom/archive/refs/heads/master.zip](https://github.com/vendettadelsangue/Jj_Python_StudyRoom/archive/refs/heads/master.zip)",
+                    description: "[https://CistusF.github.io/Jj_Python_StudyRoom/](https://CistusF.github.io/Jj_Python_StudyRoom/)",
                     color: "BLURPLE",
                     fields: [{
                         name: "KR",
@@ -54,10 +33,26 @@ client.once('ready', () => {
                 member.send({ embeds: [embed] });
             };
         });
-        console.log(`All of the messages are sended\nfailed to send message list\n\n${failed}`);
+        console.log("Triggered")
+    })
 
-        process.exit(1);
+    cron.schedule("00 21 * * *", () => {
+        students.forEach(i => {
+            member = guild.members.cache.get(i);
+            if (!member) {
+                failed.push(i);
+            } else {
+                let embed = new MessageEmbed({
+                    title: "시험 안내",
+                    description: "시험이 종료되었습니다.\n파일을 제출해주세요.",
+                    color: "BLURPLE",
+                });
+                member.send({ embeds: [embed] });
+            };
+        });
     });
+    console.log("Triggered")
+
 });
 
 client.on("message", (message) => {
@@ -69,8 +64,10 @@ client.on("message", (message) => {
         },
         description: message.content
     });
-
+    console.log("\n\n");
+    console.log(message.author.tag);
     console.log(message.attachments);
+    console.log("\n\n");
     client.channels.cache.get("898007999463968778").send({ embeds: [embed] });
 });
 

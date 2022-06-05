@@ -1,6 +1,0 @@
-> 문제 22번
-아래 코드의 출력값을 구하시오. 
-
-> 코드
-String = "Notepad coding is bad..."
-print(String[20:-1])
