@@ -3,7 +3,7 @@ var table = document.querySelector("#Table");
 const quizData = [{
     "type": 1,
     "quiz": "아래 코드와 같은 결과값을 출력하는 코드를 고르시오.",
-    "code": "a = 1\ndef A():\n    global a\n    if a != 10\n    a += 1;return 'Python'",
+    "code": "a = 1\ndef A():\n    global a\n    if a != 10\n        a += 1;\n   return 'Python'",
     "list": [
         "for i in range(0, 10):\n    print('Python')",
         "a = 10\nwhile a = 0:\n    a -= 1;print('Python')",
