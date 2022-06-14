@@ -67,7 +67,7 @@ const quizData = [
     }, {
         "type": 1,
         "quiz": "아래 재귀함수의 결과값으로 옳은것을 고르시오.",
-        "code": "bus = [False, False, True, False, True]\n\ndef Loop(n):\n\tif bus[n] == True\n\t\treturn n\n\treturn Loop(n + 1)",
+        "code": "bus = [False, False, True, False, True]\n\ndef Loop(n):\n\tif bus[n] == True\n\t\treturn n\n\treturn Loop(n + 1)\nLoop(0)",
         "list": [
             1,
             2,
