@@ -14,7 +14,7 @@ var table = document.querySelector("#Table");
         "type" : 2,
         "quiz": string,
         "list": string[]
-    };
+    }
 
     type 3
     {
@@ -42,7 +42,7 @@ const quizData = [{
 }, {
     "type": 1,
     "quiz": "아래 코드가 실행되었을 때\nvisitSeoul의 마지막 값으로 옳은것은?",
-    "code": "visitSeoul = 0\ndef tripToSeoul(n):\n\tglobal visitSeoul\n\tvisitSeoul = n\n\ndef callSeoul():\n\tvisitSeoult = 100\n\n\ncallSeoul(); tripToSeoul(visitSeoul)",
+    "code": "visitSeoul = 0\ndef tripToSeoul(n):\n\tglobal visitSeoul\n\tvisitSeoul = n\n\ndef callSeoul():\n\tvisitSeoul = 100\n\n\ncallSeoul(); tripToSeoul(visitSeoul)",
     "list": [
         "100",
         "1",
