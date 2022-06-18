@@ -155,7 +155,7 @@ const quizData = [{
 }, {
     "type": 1,
     "quiz": "아래 코드를 실행하였을 경우 출력값으로 올바른것을 고르시오.",
-    "code": "List = [[4, 60 1, 5, 6]]\nList[0] = 1\nprint(List[0])",
+    "code": "List = [[4, 60, 1, 5, 6]]\nList[0] = 1\nprint(List[0])",
     "list": [
         "4",
         "60",
